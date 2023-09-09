@@ -1,0 +1,95 @@
+@font-face {
+  font-family: NorseBold;
+  src: url(./images/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  /* line-height: 1.5; */
+  font-family: "Courier New", Courier, monospace;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+}
+image {
+  color: #fff;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(1, minmax(20vh, 1fr)) repeat(1, minmax(80vh, 5fr));
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  display: grid;
+  grid-row: 1 / -1;
+  background: rgb(85, 133, 85);
+  color: #fff;
+  padding: 10px 5px;
+  height: 100vh;
+}
+aside img {
+  margin-right: 5px;
+}
+aside div {
+  margin-bottom: 30px;
+}
+header {
+  padding: 10px 10px;
+  background: #fff;
+  box-shadow: 10px 5px 5px grey;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.top-header {
+  display: flex;
+  flex-direction: row;
+  gap: 20vw;
+}
+input {
+  width: 30vw;
+  border-radius: 10px;
+  padding: 5px;
+}
+.notification-center {
+  display: flex;
+  gap: 20px;
+}
+.notification-center > span {
+  margin-top: 5px;
+}
+.bottom-header {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.user-info > img {
+  margin-right: 15px;
+}
+.user-info {
+  display: flex;
+}
+.user-btn {
+  display: flex;
+  margin: 15px 0 0 200px;
+  gap: 20px;
+  justify-content: space-around;
+}
+.user-btn > button {
+  width: 80px;
+  border-radius: 10px;
+  background: rgb(85, 133, 85);
+  border: none;
+}
+main {
+  padding: 20px;
+}
